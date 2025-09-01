@@ -219,7 +219,6 @@ main {
     flex-direction: column;
     padding: 1rem;
     padding-bottom: 8rem;
-    /* space for the button bar */
   }
 
   .name {
@@ -241,7 +240,7 @@ main {
 
   .dice {
     height: 6rem;
-    top: 18rem;
+    top: 40%;
   }
 
   /* Button container at bottom */
