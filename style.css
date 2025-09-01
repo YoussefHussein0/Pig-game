@@ -210,94 +210,60 @@ main {
   background-color: #ff4a3d;
 }
 
-/* For tablets and smaller screens */
+/* For mobile screens */
+
 @media (max-width: 768px) {
   main {
-    width: 90%;
+    width: 100%;
     height: auto;
     flex-direction: column;
-    padding: 2rem;
-  }
-
-  .player {
-    padding: 4rem 2rem;
+    padding: 1rem;
+    padding-bottom: 8rem;
+    /* space for the button bar */
   }
 
   .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .score {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   .current {
-    width: 80%;
-    padding: 1.5rem;
+    width: 90%;
+    padding: 1rem;
   }
 
   .current-score {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  .dice {
-    height: 8rem;
-    top: 20rem;
-  }
-
-  .btn {
-    font-size: 1.6rem;
-    padding: 0.5rem 2rem;
-  }
-
-  .btn--roll {
-    top: 50%;
-  }
-
-  .btn--hold {
-    top: 60%;
-  }
-}
-
-/* For mobile screens */
-@media (max-width: 480px) {
-
-  /* Ensure main content leaves space for buttons */
-  main {
-    padding-bottom: 8rem;
-    /* space for bottom buttons */
-  }
-
-  /* All buttons to bottom bar style */
-  .btn {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 33.33%;
-    border-radius: 0;
-    margin: 0;
-    font-size: 1.3rem;
-    padding: 1rem 0;
-    box-shadow: 0 -0.3rem 0.6rem rgba(0, 0, 0, 0.15);
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-
-  .btn--new {
-    left: 0;
-  }
-
-  .btn--roll {
-    left: 33.33%;
-  }
-
-  .btn--hold {
-    left: 66.66%;
-  }
-
-  /* Optional: Adjust dice size for mobile */
   .dice {
     height: 6rem;
     top: 18rem;
+  }
+
+  /* Button container at bottom */
+  .btn-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  .btn {
+    position: static;
+    /* override desktop absolute */
+    transform: none;
+    font-size: 1.4rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
   }
 }
