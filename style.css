@@ -209,3 +209,97 @@ main {
 .btn--modal-new:hover {
   background-color: #ff4a3d;
 }
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .player {
+    padding: 4rem 2rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .dice {
+    height: 8rem;
+    top: 20rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .btn--roll {
+    top: 50%;
+  }
+
+  .btn--hold {
+    top: 60%;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .score {
+    font-size: 3.5rem;
+  }
+
+  .current {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .current-score {
+    font-size: 2rem;
+  }
+
+  .dice {
+    height: 6rem;
+    top: 25rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .btn--roll {
+    top: 55%;
+  }
+
+  .btn--hold {
+    top: 65%;
+  }
+}
