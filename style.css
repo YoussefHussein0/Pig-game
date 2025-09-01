@@ -261,45 +261,43 @@ main {
 
 /* For mobile screens */
 @media (max-width: 480px) {
+
+  /* Ensure main content leaves space for buttons */
   main {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 1rem;
+    padding-bottom: 8rem;
+    /* space for bottom buttons */
   }
 
-  .name {
-    font-size: 2rem;
-  }
-
-  .score {
-    font-size: 3.5rem;
-  }
-
-  .current {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  .current-score {
-    font-size: 2rem;
-  }
-
-  .dice {
-    height: 6rem;
-    top: 25rem;
-  }
-
+  /* All buttons to bottom bar style */
   .btn {
-    font-size: 1.4rem;
-    padding: 0.5rem 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 33.33%;
+    border-radius: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    box-shadow: 0 -0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .btn--new {
+    left: 0;
   }
 
   .btn--roll {
-    top: 55%;
+    left: 33.33%;
   }
 
   .btn--hold {
-    top: 65%;
+    left: 66.66%;
+  }
+
+  /* Optional: Adjust dice size for mobile */
+  .dice {
+    height: 6rem;
+    top: 18rem;
   }
 }
